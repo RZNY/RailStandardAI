@@ -39,7 +39,7 @@ export async function queryStandards(
       contents: `Context:\n${context}\n\nQuestion: ${question}`,
       config: {
         systemInstruction,
-        thinkingConfig: { thinkingBudget: 4000 },
+        thinkingConfig: { thinkingBudget: 0 },
         responseMimeType: "application/json",
         responseSchema: {
           type: Type.OBJECT,
